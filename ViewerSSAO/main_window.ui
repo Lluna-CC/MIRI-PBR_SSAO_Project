@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>827</width>
+    <height>618</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="Widget">
+   <property name="minimumSize">
+    <size>
+     <width>827</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>600</width>
+     <height>600</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="GLWidget" name="glwidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>600</width>
+        <height>600</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="Configuration">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>500</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_7">
+         <attribute name="title">
+          <string>PBR</string>
+         </attribute>
+         <widget class="QGroupBox" name="TreeOptions">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>200</width>
+            <height>471</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Options</string>
+          </property>
+          <widget class="QRadioButton" name="radio_reflection">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>140</y>
+             <width>117</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Reflection</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radio_iblpbs">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>250</y>
+             <width>117</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>IBL PBS</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="spin_f0r">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>300</y>
+             <width>69</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <double>2.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.050000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.200000000000000</double>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="spin_f0g">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>340</y>
+             <width>69</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <double>2.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.050000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.200000000000000</double>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="spin_f0b">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>380</y>
+             <width>69</width>
+             <height>27</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <double>2.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.050000000000000</double>
+           </property>
+           <property name="value">
+            <double>0.200000000000000</double>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>290</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>F0 R</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>340</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>F0 G</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>380</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>F0 B</string>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radio_phong">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>111</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Phong</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QRadioButton" name="radio_texMap">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>60</y>
+             <width>151</width>
+             <height>24</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Texture Mapping</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="combo_tex">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>90</y>
+             <width>121</width>
+             <height>34</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>Color</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Roughness</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Metalness</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QRadioButton" name="radio_pbs">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>160</y>
+             <width>112</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Simple PBS</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="check_sky">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>420</y>
+             <width>92</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Sky Box</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QWidget" name="horizontalLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>180</y>
+             <width>148</width>
+             <height>34</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Roughness</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="dspin_rough">
+              <property name="maximum">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.050000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="horizontalLayoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>210</y>
+             <width>160</width>
+             <height>34</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Metalness</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="dspin_metal">
+              <property name="maximum">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.050000000000000</double>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_8">
+         <attribute name="title">
+          <string>SSAO</string>
+         </attribute>
+         <widget class="QGroupBox" name="TreeOptions_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>200</width>
+            <height>471</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Options</string>
+          </property>
+          <widget class="QWidget" name="">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>40</y>
+             <width>126</width>
+             <height>298</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QRadioButton" name="radioButton">
+                <property name="text">
+                 <string>2-Step render</string>
+                </property>
+                <attribute name="buttonGroup">
+                 <string notr="true">buttonGroup</string>
+                </attribute>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="combo_tex_2">
+                <item>
+                 <property name="text">
+                  <string>Albedo</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Normals</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Depth</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_2">
+                <property name="text">
+                 <string>Basic SSAO</string>
+                </property>
+                <attribute name="buttonGroup">
+                 <string notr="true">buttonGroup</string>
+                </attribute>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_4">
+                <property name="text">
+                 <string>Improved SSAO</string>
+                </property>
+                <attribute name="buttonGroup">
+                 <string notr="true">buttonGroup</string>
+                </attribute>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_3">
+                <property name="text">
+                 <string>Normal PBR</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+                <attribute name="buttonGroup">
+                 <string notr="true">buttonGroup</string>
+                </attribute>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="text">
+                   <string>Radius</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QDoubleSpinBox" name="spin_f0r_2">
+                  <property name="maximum">
+                   <double>20.000000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.050000000000000</double>
+                  </property>
+                  <property name="value">
+                   <double>0.500000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <widget class="QLabel" name="label_7">
+                  <property name="text">
+                   <string>Samples</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="spinBox">
+                  <property name="value">
+                   <number>5</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <item>
+                 <widget class="QLabel" name="label_8">
+                  <property name="text">
+                   <string>Directions</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="spinBox_2">
+                  <property name="value">
+                   <number>5</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_2">
+              <property name="text">
+               <string>AO Albedo</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="RenderOptions">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLabel" name="Label_NumFaces">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>10</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Label_Faces">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Faces</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Label_Vertices">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vertices</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Label_NumVertices">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>30</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Label_Framerate">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>71</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Framerate</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Label_NumFramerate">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>60</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>828</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad"/>
+    <addaction name="separator"/>
+    <addaction name="actionLoad_Specular"/>
+    <addaction name="actionLoad_Diffuse"/>
+    <addaction name="separator"/>
+    <addaction name="actionLoad_Color"/>
+    <addaction name="actionLoad_Roughness"/>
+    <addaction name="actionLoad_Metalness"/>
+    <addaction name="separator"/>
+    <addaction name="actionGenerate_Diffuse_Irradiance"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load Model...</string>
+   </property>
+  </action>
+  <action name="actionLoad_Specular">
+   <property name="text">
+    <string>Load Specular/Sky...</string>
+   </property>
+  </action>
+  <action name="actionLoad_Diffuse">
+   <property name="text">
+    <string>Load Diffuse...</string>
+   </property>
+  </action>
+  <action name="actionLoad_Color">
+   <property name="text">
+    <string>Load Color...</string>
+   </property>
+  </action>
+  <action name="actionLoad_Roughness">
+   <property name="text">
+    <string>Load Roughness...</string>
+   </property>
+  </action>
+  <action name="actionLoad_Metalness">
+   <property name="text">
+    <string>Load Metalness...</string>
+   </property>
+  </action>
+  <action name="actionGenerate_Diffuse_Irradiance">
+   <property name="text">
+    <string>Generate Diffuse Irradiance</string>
+   </property>
+  </action>
+  <action name="actionGenerate_Specular_Irradiance">
+   <property name="text">
+    <string>Generate Specular Irradiance</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QWidget</extends>
+   <header>glwidget.h</header>
+   <container>1</container>
+   <slots>
+    <signal>SetFaces(QString)</signal>
+    <signal>SetVertices(QString)</signal>
+    <signal>SetFramerate(QString)</signal>
+    <slot>SetReflection(bool)</slot>
+    <slot>SetPBS(bool)</slot>
+    <slot>SetFresnelB(double)</slot>
+    <slot>SetFresnelG(double)</slot>
+    <slot>SetFresnelR(double)</slot>
+    <slot>SetPhong(bool)</slot>
+    <slot>SetTexMap(bool)</slot>
+    <slot>SetCurrentTexture(int)</slot>
+    <slot>SetIBLPBS(bool)</slot>
+    <slot>SetSkyVisible(bool)</slot>
+    <slot>SetRoughness(double)</slot>
+    <slot>SetMetalness(double)</slot>
+    <slot>SetTwoStep(bool)</slot>
+    <slot>SetTwoStepMode(int)</slot>
+    <slot>SetAO(bool)</slot>
+    <slot>SetRadius(double)</slot>
+    <slot>SetSamples(int)</slot>
+    <slot>SetDirections(int)</slot>
+    <slot>SetAOAlbedo(bool)</slot>
+    <slot>SetPBR(bool)</slot>
+    <slot>SetImprovedSSAO(bool)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>glwidget</sender>
+   <signal>SetFaces(QString)</signal>
+   <receiver>Label_NumFaces</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>569</x>
+     <y>566</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>793</x>
+     <y>573</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>glwidget</sender>
+   <signal>SetVertices(QString)</signal>
+   <receiver>Label_NumVertices</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>593</x>
+     <y>587</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>793</x>
+     <y>593</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>glwidget</sender>
+   <signal>SetFramerate(QString)</signal>
+   <receiver>Label_NumFramerate</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>605</x>
+     <y>635</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>760</x>
+     <y>617</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio_reflection</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetReflection(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>752</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio_iblpbs</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetIBLPBS(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>752</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>106</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spin_f0b</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetFresnelB(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>764</x>
+     <y>477</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>520</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spin_f0g</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetFresnelG(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>437</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spin_f0r</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetFresnelR(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>547</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio_phong</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetPhong(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>746</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio_texMap</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetTexMap(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>786</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>combo_tex</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetCurrentTexture(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>756</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radio_pbs</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetPBS(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>747</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>check_sky</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetSkyVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>747</x>
+     <y>513</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dspin_metal</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetMetalness(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>725</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dspin_rough</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetRoughness(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>735</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>308</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>combo_tex_2</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetTwoStepMode(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>681</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>542</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetTwoStep(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>721</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>555</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetAO(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>719</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>556</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spin_f0r_2</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetRadius(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>745</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>457</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetSamples(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>758</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>567</x>
+     <y>317</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetDirections(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>744</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>521</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetAOAlbedo(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>719</x>
+     <y>396</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetPBR(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>736</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>520</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>glwidget</receiver>
+   <slot>SetImprovedSSAO(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>739</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>598</x>
+     <y>251</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>updated_plane(double,double,double,double,bool)</signal>
+  <slot>toggle_transfer_function_dialog()</slot>
+ </slots>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+  <buttongroup name="buttonGroup_2"/>
+ </buttongroups>
+</ui>
